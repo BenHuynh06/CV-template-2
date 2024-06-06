@@ -3,6 +3,106 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
-    background-color: #EFE4B0;
+    background-color: #ADD899;
+}
+
+.grid {
+    background-color: #FFDE95;
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    padding: 30px;
+    grid-template-columns: 30% 70%;
+}
+
+.grid .col-1 {
+    border-right: 2px solid #000;
+}
+
+.col-1 .avatar {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.col-1 .avatar img {
+    border-radius: 10%;
+}
+
+.col-1 .profile {
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+.col-1 .exp {
+    text-align: right;
+}
+
+.col-1 .exp .exp-header {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.col-1 .exp h4 {
+    font-size: 20px;
+}
+
+.col-1 .exp p {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.col-1 .time {
+    margin: -15px 0;
+}
+
+.col-1 .skills {
+    text-align: right;
+    font-size: 20px;
+}
+
+.col-1 .skills ul {
+    list-style: none;
+    margin-top: -10px;
+    line-height: 1.6;
+}
+
+/* Common */
+.col-1 .exp .time,
+.col-1 .exp p, 
+.col-1 .skills,
+.col-1 .exp h4 {
+    margin-right: 8px;
+}
+
+/* ============================= */
+
+.col-2 {
+    margin-left: 8px;
+}
+
+.col-2 .intro h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.col-2 .intro span {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.col-2 .intro p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.col-2 .projects h4 {
+    font-size: 20px;
 }
